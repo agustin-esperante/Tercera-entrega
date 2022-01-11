@@ -1,0 +1,144 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: century gothic;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+$clrs: (
+    gr-bk: linear-gradient( to left ,black, rgb(24, 24, 24)),
+    bk-gr: linear-gradient( to left, rgb(24, 24, 24) ,black ),
+    wh-gr: linear-gradient( to left ,rgb(160, 160, 160) ,white ),
+    gld: rgb(160, 130, 70)
+);
+
+body{
+    background-image: url(/img/fondo.jpg);
+    background-size: 100%;
+}
+a{
+    text-decoration: none;
+    color: map-get($clrs , gld );
+}
+.navbar{
+    background: map-get($clrs , bk-gr);
+    border-bottom: 3px solid map-get($clrs , gld );
+}
+.pr-tl{
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+#productos{
+    border-top: 3px solid map-get($clrs , gld );
+    margin-top: 10px;
+}
+.grid{
+    &-container{
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(1, 300px);
+        gap: 50px 10px;
+        padding: 15px;
+        width: 100%;
+    }
+    &-item{
+        width: 90%;
+        height: 100%;
+        align-self: center;
+        text-align: center;
+        background: white;
+        padding: 20px;
+        overflow: hidden;
+        border: 5px solid map-get($clrs , gld );
+    }
+    &-item:hover{
+        margin: 1px 15px 15px 15px;
+        border: 5px outset map-get($clrs , gld );
+    }
+}
+.producto img{
+    width: 100px;
+    height: auto;
+    margin: 5px;
+}
+#nosotros{
+    border-top: 3px solid map-get($clrs , gld );
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    padding: 30px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.nosotros{
+    background-image: url(/img/nosotros.jpg);
+    background-size: 170%;
+    width: 100%;
+    padding: 45px;
+    text-align: start;
+    height: auto;
+    color: white;
+}
+/* contacto */
+
+#contacto{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    padding-bottom: 250px;
+    & input{
+        background-image: map-get($clrs , gr-bk );
+        color: white;
+        border: inset map-get($clrs , gld );
+        margin: 10px;
+        padding: 15px;
+        width: 70%;
+    }
+    & input:hover{
+        background: white;
+        color: black;
+        border: outset map-get($clrs , gld );
+    }
+    & textarea{
+        background-image: map-get($clrs , gr-bk );
+        color: white;
+        border: inset map-get($clrs , gld );
+        margin: 5px;
+        padding: 25px;
+        width: 70%;
+    }
+    & textarea:hover{
+        background: white;
+        color: black;
+        border: outset map-get($clrs , gld );
+    }
+}
+
+  .btn-enviar{
+    background-image:map-get($clrs , gr-bk );
+    color: white;
+    border: outset map-get($clrs , gld );
+    margin: 15px;
+    padding: 5px;
+    width: 20%;
+    height: 60px;
+
+    &:hover{
+        background: white;
+        color: black;
+        border: inset map-get($clrs , gld );
+    }
+  }
+.imag-contacto{
+    width: 7%;
+    background-color: white;
+    border-radius: 50px;
+}
+footer{
+    border-top: 3px solid map-get($clrs , gld );
+    background: rgb(24, 24, 24);
+}
+.copy{
+    text-align: center;
+}
