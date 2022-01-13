@@ -160,4 +160,24 @@ footer {
 .copy {
   text-align: center;
 }
+
+@media (max-width: 700px) {
+  .grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (50%)[2];
+        grid-template-columns: repeat(2, 50%);
+    -ms-grid-rows: (17em)[2];
+        grid-template-rows: repeat(2, 17em);
+    gap: 25px 10px;
+  }
+  .grid-item {
+    padding: 10px;
+    overflow: hidden;
+  }
+  .producto img {
+    width: 6em;
+    margin: 3px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

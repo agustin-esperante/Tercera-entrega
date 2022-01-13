@@ -141,3 +141,22 @@ footer{
 .copy{
     text-align: center;
 }
+@media(max-width: 700px){
+    .grid{
+        &-container{
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            grid-template-rows: repeat(2, 17em);
+            gap: 25px 10px;
+        }
+        &-item{
+            padding: 10px;
+            overflow: hidden;
+        }
+    }
+    .producto img{
+        width: 6em;
+        margin: 3px;
+    }
+
+}
